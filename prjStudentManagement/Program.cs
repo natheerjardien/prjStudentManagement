@@ -17,7 +17,7 @@
                 switch(choice)
                 {
                     case "1":
-                        Console.Write("Enter student name: ");
+                        Console.Write("Enter student's name: ");
                         string name = Console.ReadLine();
                         Console.Write("Enter student age: ");
                         int age = int.Parse(Console.ReadLine());
