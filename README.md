@@ -1,1 +1,6 @@
 # prjStudentManagement
+
+In C#, pointer types are variables that hold the memory address of another variable. They are declared using the * symbol (e.g int* ptr). Pointers allow for direct memory manipulation, which can lead to highly efficient code. But because pointer operations bypass C#’s type safety and garbage collection, they can easily lead to memory corruption and buffer.
+A real-life example of using pointer types in C# is during image processing when applying filters to large images. For instance when converting a color image to grayscale, using regular methods like GetPixel() and SetPixel() is slow because each call accesses memory separately through managed code. To improve performance, developers can use pointer types in an unsafe block to access and modify the raw pixel data directly in memory. By working with pointers, the application can loop through the image bytes much faster, applying changes like grayscale conversion efficiently. This is commonly used in scenarios where speed is critical like  real-time photo editing tools or video processing apps. But because it bypasses C#’s memory safety features, the code must be marked as unsafe, and the project must allow unsafe operations.
+
+// VS, Jajesh. 2023. Pointers In C#. [online]. Available at: https://www.c-sharpcorner.com/article/pointers-in-C-Sharp/ [Accessed on: 08 August 2025]
